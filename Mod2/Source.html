@@ -2,27 +2,55 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="styleshet" href="Source.css">
+  <link rel="stylesheet" href="Source.css">
+  <title>Flexbox Program</title>
 
 </head>
 <body>
-  
-  <H2>Responsive Four Entry Layout Using a Flexbox</H2>
-  <p><strong>Resize the browser window to see the responsive effect.</strong></p>
-  <p>On screens that are 992px wide or less, the columns will resize form four columns to two columns. </p>
-  <p>On screens that are 600px wide or less, the columns will stack on top of each other instead of next to each other.</p>
+    <h2>This is my Flexbox <i class="fas fa-project-diagram    "></i></h2>
 
-  <div class="flexboxRow">
+  <div class="myFlexboxRow">
     <div class="mflexboxColumn" style="background-color: coral;">
       <h2>Entry 1 - A link (hyperlink)</h2>
-      <p><a href="https://www.nike.com/men?cp=99736393091_search_%7CNike%7CGOOGLE%7C71700000038284603%7CMEN_X_X_X_X-Device_X_Legacy_Core-NikeBrand_Exact%7Ce%7Cc&gclsrc=aw.ds&&gclid=Cj0KCQiAyJOBBhDCARIsAJG2h5eQDUg52CMCMwHE5gFuZj7AYOCUVED4fvdiCJv-___d7ub7Sj_wZMoaAm6pEALw_wcB&gclsrc=aw.ds" target-"_blank">Visit Nike.com!</a></p>
+      <p><a href="https://www.nike.com/men?cp=99736393091_search_%7CNike%7CGOOGLE%7C71700000038284603%7CMEN_X_X_X_X-Device_X_Legacy_Core-NikeBrand_Exact%7Ce%7Cc&gclsrc=aw.ds&&gclid=Cj0KCQiAyJOBBhDCARIsAJG2h5eQDUg52CMCMwHE5gFuZj7AYOCUVED4fvdiCJv-___d7ub7Sj_wZMoaAm6pEALw_wcB&gclsrc=aw.ds" target="_blank">Visit Nike.com!</a></p>
     </div>
 
   
     <div class="myFlexboxColumn" style="background-color: darkorange;">
-      <h2>Entry 2 - an image</h2>
-      <p><img src="Nike-Mag-2016-Official-06_square_1600.jpg" alt="Nike Air Mag" style="width:50%;"></p>
-    </div>
+      <h2>Entry 2 - An image</h2>
+      <p><img src="mag.jpg" alt="Nike Air Mag" style="width:50%;"></p>
+        </div>
+
+
+    <div class="myFlexboxColumn" style="background-color: orangered;">
+    <h2>Entry 3 - A video</h2>
+    <p><video width="50%" height="50%" controls>
+      <source src="Air.mp4" type="video/mp4">
+    </video>
+    </p>
+        </div>
+
+    <div class="myFlexboxColumn" style="background-color: tomato;">
+    <p id="demo"></p>
+    <h2>Entry 4 - Coordinates</h2>
+    <p>Click this button to get your coordinates</p>
+    <button onclick="getlocation()">Try this</button>
+
+    <script>
+      var x=document.getElementById("demo");
+      function getlocation(){
+        if(navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(showPosition);
+        }
+        else{
+          x.innerHTML+"Geolocation is not found";
+        }
+      }
+      function showPosition(position){
+        x.innerHTML= "Latitude" + position.coords.latitude + "<br>Longitude;" + position.coords.longitude
+      }
+    </script>
+    </div> 
 
 
   </div>
