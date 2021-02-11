@@ -1,0 +1,85 @@
+body {
+      font-family: 'Anaheim';
+      font-size: 1.25em;
+    }
+    
+    #outside {
+      background-color: lightgrey;
+      
+    }
+    
+    
+    h1 {
+      font-size: 1.5em;
+      text-align: center;
+      text-transform: capitalize;
+    }
+    
+    form {
+      margin: 0 auto;
+      width: 70%;
+      
+      
+    }
+    #survey-form {
+      background-color: lightgrey;
+    }
+    
+    fieldset { 
+      border:5px solid white;
+      margin: 10px;
+     }
+
+    
+    #number {
+      width: 150px;
+    }
+    
+    
+    div + div {
+      margin-top: 2em;
+      }
+    
+    
+    } */
+    
+    input, textarea {
+      width: 200px;
+    
+      border: 1px solid #999;
+    }
+    
+    input:focus, textarea:focus {
+      border-color: OrangeRed;
+    }
+    
+    textarea {
+      
+      vertical-align: top;
+    
+      
+      height: 5em;
+    
+      
+      resize: vertical;
+    }
+    
+    
+    button {
+      margin: .5em;
+      font-size: 1em;
+      text-transform: capitalize;
+      background-color: orangered;
+      color: white;
+      border: none;
+      padding: 5px;
+      border-radius: 2px;
+      
+    }
+    
+    #submitbutton {
+      display: flex; 
+      justify-content: center;
+    }
+    
+    

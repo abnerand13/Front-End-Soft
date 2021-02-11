@@ -1,0 +1,90 @@
+
+<link rel="stylesheet" href="Survey.css">
+
+<div id="outside">
+<form id="survey-form" action="/my-handling-form-page" method="post">
+  <h1 id="title">Jameson's Kitchen Application Form</h1>
+  <p id="description"><b>Note:</b> Please fill out this form using truthful methods</p>
+  
+  <fieldset>
+    
+    <div>
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" required id="name" name="user_name" placeholder="Enter name here">   </div>
+
+    <div>
+      <label id="email-label" for="Email">Email:</label>
+      <input type="email" required id="email" name="user_email" placeholder="Enter email here">   </div>
+  </fieldset>
+
+  <fieldset>
+    <div>
+      <label for="Age">Age</label>
+      <p>
+        <input type="radio" name="age" value="15 to 17"> 15 to 17<br>
+        <input type="radio" name="age" value="18 to 24"> 18 to 24<br>
+        <input type="radio" name="age" value="25 to 29"> 25 to 29<br>
+        <input type="radio" name="age" value="30 to 34"> 30 to 34<br>
+        <input type="radio" name="age" value="35 to 34"> 35 to 39<br>
+        <input type="radio" name="age" value="Older"> Older
+      </p>
+    </div>
+  
+  </fieldset>
+
+
+<fieldset>
+    <div>
+      <label for="Education">Education</label>
+      <p>
+        <input type="radio" name="EDU" value="Highschool"> Highschool<br>
+        <input type="radio" name="EDU" value="GED"> GED<br>
+        <input type="radio" name="EDU" value="Some College"> Some College<br>
+        <input type="radio" name="EDU" value="Associate's Degree"> Associate's Degree<br>
+        <input type="radio" name="EDU" value="Bachelor's Degree"> Bachelor's Degree<br>
+        <input type="radio" name="EDU" value="Other"> Other
+      </p>
+    </div>
+  
+  </fieldset>
+  
+  <fieldset>
+    <label for="Reference">How did you hear about us?</label>
+    <p>
+      <input type="checkbox" name="Social Media" value="Social Media"> Social Media<br>
+      <input type="checkbox" name="Family" value="Family"> Family<br>
+      <input type="checkbox" name="Friend" value="Friend"> Friend<br>
+      <input type="checkbox" name="Employee" value="Employee" c> Employee<br>
+      <input type="checkbox" name="Other" value="Other" > Other<br>
+    </p>
+  </fieldset>
+  
+  
+  
+  <fieldset>
+    <div>
+      <label for="Experience">Experience in the Culinary Arts:</label>
+      <select id="dropdown">
+  <option value="None">None</option>
+  <option value="Some">Some</option>
+  <option value="A Lot">A Lot</option>
+  <option value="Gordan Ramsey">Gordan Ramsey</option>
+  </select>
+    </div>
+  </fieldset>
+
+  
+  
+  <fieldset>
+    <div>
+      <label for="msg"></label>
+      <p> Tell us about yourself!</p>
+      <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+  </fieldset>
+
+  <div id="submitbutton">
+    <button type="submit" id="submit">Submit</button>   </div>
+
+</form>
+  </div>
+
